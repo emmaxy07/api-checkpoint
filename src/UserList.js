@@ -18,13 +18,15 @@ function UserList() {
 
   return (
     <div >
-      <ul className="users">
+      <ul className='tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
         {
           listOfUser.map(listOfUser => (
-            <div >
+            <div>
             <h3>{listOfUser.name}</h3>
-            <h3>{listOfUser.username}</h3>
-            <h3>{listOfUser.email}</h3>
+            <h4>{listOfUser.username}</h4>
+            <h5>{listOfUser.email}</h5>
+            <h6>{listOfUser.address.street}</h6>
+            <hr />
             </div>
           ))
         }
