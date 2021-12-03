@@ -37,7 +37,7 @@ function UserList() {
           }).map(listOfUser => (
             <div>
             <h3>{listOfUser.name}</h3>
-            <h4>@{listOfUser.username}</h4>
+            <h4><i>@{listOfUser.username}</i></h4>
             <h5>{listOfUser.email}</h5>
             <h6>{listOfUser.address.street}</h6>
             <hr />
